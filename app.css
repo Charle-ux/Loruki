@@ -107,7 +107,7 @@ a{
 }
 
 img{
-    width: 95%;
+    width: 100%;
 }
 
 .navbar{
@@ -145,7 +145,7 @@ nav a:hover{
 
 .showcase-form{
     height: 250px;
-    width: 350px;
+    width: 300px;
     padding: 40px;
     position: relative;
     top: 50px;
@@ -203,9 +203,8 @@ nav a:hover{
 
 .flex-3{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 100px;
     margin-top: 15px;
 }
 
@@ -242,20 +241,35 @@ nav a:hover{
 
 .grid-2{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 10px;
     height: 100%;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    padding: 0 50px;
-    /* grid-column: 1/2; */
+}
+
+.stats{
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1100px;
+    padding: 0 40px;
 }
 
 .stats-heading{
     color: #b4becb;
     text-align: center;
     font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.grid-item-1{
+    grid-row: 1 / span 2;
+}
+
+.grid-item-3{
+    grid-row: 2/3;
+    grid-column: 2/3;
 }
 
 .section-bar{
@@ -264,6 +278,14 @@ nav a:hover{
     height: 300px;
     justify-content: center;
     align-items: center;
+}
+
+.sub-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .text-center{
@@ -294,22 +316,47 @@ nav a:hover{
 
 .section-flex{
     display: flex;
-    justify-content: space-between;
-    height: 100%;
-    flex-wrap: wrap;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer{
     background-color: #212529;
     color: #FFF;
-    height: 100%;
+    height: 150px;
+    display: flex;
 }
 
 .footer-grid{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex; 
+    justify-content: space-between;
     gap: 20px;
     height: 100%;
-    justify-content: center;
     align-items: center;
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+}
+
+.language-card{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #333;
+    margin: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    
+}
+
+.language-card :hover{
+    transform: translateY(-15px);
+}
+
+
+.language-card h4{
+    text-align: center;
+    margin-bottom: 10px;
 }

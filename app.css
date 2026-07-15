@@ -110,6 +110,18 @@ img{
     width: 100%;
 }
 
+.img{
+    width: 50%;
+}
+
+.img-2{
+    width: 70%;
+}
+
+.grid-item-2{
+    justify-self: end;
+}
+
 .navbar{
     background-color: #047aed;
 }
@@ -122,8 +134,60 @@ nav a:hover{
     background-color: #047aed;
     height: 300px;
     margin-bottom: 100px;
+    position: relative;
 }
 
+.showcase-features{
+    background-color: #047aed;
+    height: 200px;
+    position: relative;
+}
+
+.showcase-features-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.xl{
+    color: #FFF;
+    font-size: 30px;
+}
+
+.lead{
+    color: #FFF;
+    font-size: 15px;
+}
+
+.subsection{
+    background-color: #616161;
+    height: 250px;
+    opacity: rgba(0, 0, 0, 0);
+    margin-bottom: 50px;
+}
+
+.sub-head{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.showcase::before,
+.showcase::after{
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    transform: skewY(-3deg);
+}
+
+.showcase .grid{
+    position: relative;
+    z-index: 1;
+}
 
 .showcase-text{
     color: #fff;
@@ -141,10 +205,11 @@ nav a:hover{
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
 .showcase-form{
-    height: 250px;
+    height: 300px;
     width: 300px;
     padding: 40px;
     position: relative;
@@ -199,6 +264,7 @@ nav a:hover{
 .flex-2{
     display: flex;
     flex-direction: column;
+    margin-bottom: 25px;
 }
 
 .flex-3{
@@ -257,30 +323,28 @@ nav a:hover{
 }
 
 .stats-heading{
-    color: #b4becb;
+    color: #333;
     text-align: center;
     font-size: 15px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .grid-item-1{
     grid-row: 1 / span 2;
 }
 
-.grid-item-2{
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-}
-
 .grid-item-3{
     grid-row: 2/3;
     grid-column: 2/3;
-    background-color: #333;
-    padding: 10px ;
-    margin: 10px;
-    border-radius: 10px;
+}
+
+.grid-item-2 h3{
+    font-size: 13px;
+}
+
+.grid-item-3 h3{
+    font-size: 13px;
 }
 
 .section-bar{
@@ -353,7 +417,7 @@ nav a:hover{
 
 .social{
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .language-card{
@@ -366,12 +430,108 @@ nav a:hover{
     
 }
 
-.language-card :hover{
+.language-card:hover{
     transform: translateY(-15px);
+    transition: all 0.2s ease-in-out;
 }
 
 
 .language-card h4{
     text-align: center;
     margin-bottom: 10px;
+}
+
+.features-main{
+    display: grid;
+}
+.features-grid-3{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.features-grid-item-1{
+    display: grid;
+    grid-column: 1/ span 2;
+}
+
+.docs-main{
+    display: grid;
+    margin-top: 30px;
+}
+
+.docs-grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.docs-main-card-1{
+    align-self: stretch;
+    height: 350px;
+    background-color: #b4becb;
+    opacity: 0.2;
+    
+}
+
+.docs-main-card-1 a{
+    color: #333;
+    font-size: 12px;
+    border-bottom: 1px solid #333;
+}
+
+.my-2{
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.text-primary{
+    margin-bottom: 10px;
+}
+
+.docs-main-card-2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} 
+
+.alert{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: green;
+    color: #fff;
+    height: 30px;
+    padding-left: 20px;
+}
+
+.docs-main-card-2 h3{
+    font-size: 15px;
+    font-weight: 400;
+}
+pre{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding-left: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-primary{
+    display: inline-block;
+    background-color: #047aed;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
 }

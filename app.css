@@ -160,9 +160,8 @@ nav a:hover{
 }
 
 .subsection{
-    background-color: #616161;
     height: 250px;
-    opacity: rgba(0, 0, 0, 0);
+    background-color: rgba(97, 97, 97, 0.1);
     margin-bottom: 50px;
 }
 
@@ -446,7 +445,7 @@ nav a:hover{
 }
 .features-grid-3{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr  1fr 1fr;
     gap: 20px;
     height: 100%;
     justify-content: center;
@@ -455,8 +454,23 @@ nav a:hover{
 }
 
 .features-grid-item-1{
-    display: grid;
+    display: flex;
+    gap: 15px;
+    grid-column: 1/ span 3;
+    align-items: center;
+}
+
+.features-grid-item-2{
+    display: flex;
+    gap: 15px;
     grid-column: 1/ span 2;
+    align-items: center;
+}
+
+.features-grid-item{
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 .docs-main{
@@ -476,8 +490,7 @@ nav a:hover{
 .docs-main-card-1{
     align-self: stretch;
     height: 350px;
-    background-color: #b4becb;
-    opacity: 0.2;
+    background-color: rgba(180, 190, 203, 0.2);
     
 }
 
@@ -489,7 +502,7 @@ nav a:hover{
 
 .my-2{
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
@@ -505,12 +518,13 @@ nav a:hover{
 
 .alert{
     display: flex;
-    /* justify-content: space-between; */
+    gap: 10px;
     align-items: center;
     background-color: green;
     color: #fff;
     height: 30px;
     padding-left: 20px;
+    font-size: 15px;
 }
 
 .docs-main-card-2 h3{
@@ -524,6 +538,7 @@ pre{
     padding-left: 20px;
     background-color: #333;
     color: #fff;
+    font-size: 12px;
 }
 
 .btn-primary{
@@ -534,4 +549,5 @@ pre{
     cursor: pointer;
     border-radius: 5px;
     border: none;
+    font-size: 15px;
 }

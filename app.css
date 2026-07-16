@@ -41,11 +41,11 @@
 
     /* COLORS */
 
-    --primary-tint: #ffffff;
-    --primary-shade: #32a091;
-    --grey-Shade:#212529;
-    --White:#f4f4f4;
-    --Black:#333333;
+    --primary-tint:  #212529;
+    --primary-shade: #047aed;
+    --grey-Shade:#b4becb;
+    --White:#fff;
+    --Black:#333;
 
     /* MISCELLANEOUS */
     
@@ -66,8 +66,8 @@ body{
 .container{
     margin: 0 auto;
     width: 90%;
-    max-width: 1100px;
-    padding: 0 40px;
+    max-width: 110rem;
+    padding: 0 4rem;
     
 }
 
@@ -77,22 +77,22 @@ h1,h2,h3{
 }
 
 h1{
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 200;
 }
 
 h2{
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 200;
-    color: #333;
+    color: var(--Black);
 }
 
 h3{
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 p{
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 ul{
@@ -102,7 +102,7 @@ ul{
 a{
     /* font-weight: 500;
     font-size:  15px; */
-    color: #fff;
+    color: var(--White);
     text-decoration: none;
 }
 
@@ -112,18 +112,16 @@ img{
 
 .img{
     width: 50%;
+    justify-self: end;
 }
 
 .img-2{
     width: 70%;
-}
-
-.grid-item-2{
     justify-self: end;
 }
 
 .navbar{
-    background-color: #047aed;
+    background-color: var(--primary-shade);
 }
 
 nav a:hover{
@@ -131,55 +129,55 @@ nav a:hover{
 }
 
 .showcase{
-    background-color: #047aed;
-    height: 300px;
+    background-color: var(--primary-shade);
+    height: 30rem;
     margin-bottom: 100px;
     position: relative;
 }
 
 .showcase-features{
-    background-color: #047aed;
-    height: 200px;
+    background-color: var(--primary-shade);
+    height: 20rem;
     position: relative;
 }
 
 .showcase-features-flex{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .xl{
-    color: #FFF;
-    font-size: 30px;
+    color: var(--White);
+    font-size: 3rem;
 }
 
 .lead{
-    color: #FFF;
-    font-size: 15px;
+    color: var(--White);
+    font-size: 1.5rem;
 }
 
 .subsection{
-    height: 250px;
+    height: 25rem;
     background-color: rgba(97, 97, 97, 0.1);
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 }
 
 .sub-head{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.5rem;
 }
 
 .showcase::before,
 .showcase::after{
     content: '';
     position: absolute;
-    height: 100px;
-    bottom: -70px;
+    height: 10rem;
+    bottom: -7rem;
     right: 0;
     left: 0;
-    background-color: #fff;
+    background-color: var(--White);
     transform: skewY(-3deg);
 }
 
@@ -189,36 +187,36 @@ nav a:hover{
 }
 
 .showcase-text{
-    color: #fff;
+    color: var(--White);
     position: relative;
 }
 
 .showcase-text p{
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .card{
     color: #333;
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
+    background-color: var(--White);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
 .showcase-form{
-    height: 300px;
-    width: 300px;
-    padding: 40px;
+    height: 30rem;
+    width: 30rem;
+    padding: 4rem;
     position: relative;
-    top: 50px;
+    top: 5rem;
     z-index: 99;
     justify-self: flex-end;
 }
 
 .form-control{
-    margin: 30px 0 ;
+    margin: 3rem 0 ;
     border: 0;
 }
 
@@ -227,14 +225,14 @@ nav a:hover{
     border-bottom: 1px solid #b4becb ;
     width: 100%;
     outline: none;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
 .btn{
-    background-color: #047aed;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: var(--primary-shade);
+    color: var(--White);
+    padding: 1rem 2rem;
     cursor: pointer;
     border-radius: 5px;
     border: none;
@@ -242,7 +240,7 @@ nav a:hover{
 
 .btn-outline{
     background-color: transparent;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid #fff;
@@ -250,8 +248,8 @@ nav a:hover{
 }
 
 .btn-dark{
-    padding: 10px 20px;
-    background-color: #212529;
+    padding: 1rem 2rem;
+    background-color: var(--primary-tint);
     border-radius: 5px;
 }
 
@@ -263,41 +261,42 @@ nav a:hover{
 .flex-2{
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 2,5rem;
 }
 
 .flex-3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 1.5rem;
 }
 
 .flex-min{
     display: flex;
-    gap: 20px;
-    padding: 10px;
+    gap: 2rem;
+    padding: 1rem;
     margin: 0 5px;
+    font-size: 1.5rem;
 }
 
 .grid{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 20px;
+    gap: 2rem;
     height: 100%;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .sec-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 2rem;
     height: 100%;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .sec-grid img{
@@ -311,21 +310,21 @@ nav a:hover{
     height: 100%;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .stats{
     margin: 0 auto;
     width: 70%;
     max-width: 1100px;
-    padding: 0 40px;
+    padding: 0 4rem;
 }
 
 .stats-heading{
     color: #333;
     text-align: center;
-    font-size: 15px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
     font-weight: 500;
 }
 
@@ -333,23 +332,32 @@ nav a:hover{
     grid-row: 1 / span 2;
 }
 
+.grid-item-2{
+     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 .grid-item-3{
     grid-row: 2/3;
     grid-column: 2/3;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 .grid-item-2 h3{
-    font-size: 13px;
+    font-size: 1.3rem;
 }
 
 .grid-item-3 h3{
-    font-size: 13px;
+    font-size: 1.3rem;
 }
 
 .section-bar{
-    background-color: #047aed;
+    background-color: var(--primary-shade);
     display: flex;
-    height: 300px;
+    height: 30rem;
     justify-content: center;
     align-items: center;
 }
@@ -367,64 +375,68 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    color: #fff;
+    gap: 1.5rem;
+    color: var(--White);
 }
 
 .text-center h2{
-    color: #FFF;
-    font-size: 30px;
+    color: var(--White);
+    font-size: 3rem;
     text-align: center;
 }
 
 .text-center p{
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .text-secondary{
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .textalign{
-    color: #212529;
+    color: var(--primary-shade);
     text-align: center;
-    margin-top:10px;
+    margin-top:1rem;
 }
 
 .section-flex{
     display: flex;
-    height: 200px;
+    height: 20rem;
     justify-content: center;
     align-items: center;
 }
 
 .footer{
-    background-color: #212529;
-    color: #FFF;
-    height: 150px;
+    background-color: var(--primary-tint);
+    color: var(--White);
+    height: 15rem;
     display: flex;
 }
 
 .footer-grid{
     display: flex; 
     justify-content: space-between;
-    gap: 20px;
+    gap: 2rem;
     height: 100%;
     align-items: center;
 }
 
+.footer-grid a{
+    font-size: 1.2rem;
+}
+
 .social{
     display: flex;
-    gap: 15px;
+    gap: 1.5rem;
 }
 
 .language-card{
-    padding: 20px;
+    padding: 2rem;
     border-radius: 10px;
-    background-color: #fff;
-    color: #333;
-    margin: 10px;
+    background-color: var(--White);
+    color: var(--Black);
+    margin: 1rem;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     
 }
@@ -437,7 +449,7 @@ nav a:hover{
 
 .language-card h4{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .features-main{
@@ -446,108 +458,108 @@ nav a:hover{
 .features-grid-3{
     display: grid;
     grid-template-columns: 1fr  1fr 1fr;
-    gap: 20px;
+    gap: 2rem;
     height: 100%;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .features-grid-item-1{
     display: flex;
-    gap: 15px;
+    gap: 1.5rem;
     grid-column: 1/ span 3;
     align-items: center;
 }
 
 .features-grid-item-2{
     display: flex;
-    gap: 15px;
+    gap: 1.5rem;
     grid-column: 1/ span 2;
     align-items: center;
 }
 
 .features-grid-item{
     display: flex;
-    gap: 15px;
+    gap: 1.5rem;
     align-items: center;
 }
 
 .docs-main{
     display: grid;
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .docs-grid{
     display: grid;
     grid-template-columns: 30% 70%;
-    gap: 20px;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .docs-main-card-1{
     align-self: stretch;
-    height: 350px;
+    height: 35rem;
     background-color: rgba(180, 190, 203, 0.2);
     
 }
 
 .docs-main-card-1 a{
-    color: #333;
-    font-size: 12px;
+    color: var(--Black);
+    font-size: 1.2rem;
     border-bottom: 1px solid #333;
 }
 
 .my-2{
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .text-primary{
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .docs-main-card-2{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
 } 
 
 .alert{
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     align-items: center;
     background-color: green;
-    color: #fff;
-    height: 30px;
+    color: var(--White);
+    height: 3rem;
     padding-left: 20px;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .docs-main-card-2 h3{
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 pre{
     display: flex;
     align-items: center;
-    height: 30px;
-    padding-left: 20px;
-    background-color: #333;
-    color: #fff;
-    font-size: 12px;
+    height: 3rem;
+    padding-left: 2rem;
+    background-color: var(--Black);
+    color: var(--White);
+    font-size: 1.2rem;
 }
 
 .btn-primary{
     display: inline-block;
-    background-color: #047aed;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: var(--primary-shade);
+    color: var(--White);
+    padding: 1rem 2rem;
     cursor: pointer;
     border-radius: 5px;
     border: none;
-    font-size: 15px;
+    font-size: 1.5rem;
 }

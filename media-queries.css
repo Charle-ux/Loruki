@@ -1,0 +1,69 @@
+/*  MD - TABLETS: 768px - 1024px*/
+@media(max-width: 48rem) {
+    /* 770px / 16px = 48rem */
+    /* 48rem x 16px = 768px */
+    html{
+        font-size: 56.25%;
+         /* 9px / 16px = 56.25% */
+    }
+    .grid,.sec-grid{
+        grid-template-columns: 1fr;
+    }
+    .sec-grid img{
+        justify-self: center;
+    }
+    .text-center{
+        margin-top: 20px;
+    }
+    .showcase{
+        height: auto;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .showcase-form{
+        justify-self: center;
+        top: 3rem;
+    }
+    .navbar{
+        height: 90px;
+    }
+    .logo{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .flex-min{
+        justify-content: center;
+        background-color: rgba(0,0,0, 0.1);
+    }
+    .flex-3{
+        display: block;
+    }
+    .sub-section{
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .grid-2{
+        display:block ;
+         margin-bottom: 20px;
+
+    }
+    .grid-item-2{
+        margin-bottom: 20px;
+    }
+    .section-bar{
+        height: auto;
+    }
+    .stats{
+        height: auto;
+    }
+    br{
+        display: none;
+    }
+}
+
+/*  SM - PHONE LANDSCAPE: 576px - 768px*/
+
+/* XS - PHONE IN PORTRAiT: < 576px */

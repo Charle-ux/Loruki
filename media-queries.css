@@ -6,6 +6,9 @@
         font-size: 56.25%;
          /* 9px / 16px = 56.25% */
     }
+
+    /* Media-Queries FOr Landing Page */
+
     .grid,.sec-grid{
         grid-template-columns: 1fr;
     }
@@ -35,7 +38,7 @@
         flex-direction: column;
     }
     .flex-min{
-        justify-content: center;
+        justify-content: space-evenly;
         background-color: rgba(0,0,0, 0.1);
     }
     .flex-3{
@@ -62,6 +65,64 @@
     br{
         display: none;
     }
+
+    /* Media-Queries For Features Section */
+
+    .showcase-features{
+        height: auto;
+    }
+    .showcase-features-flex{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .img{
+        justify-self: center;
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    .showcase-features, .grid{
+        margin-bottom: 0;
+    }
+    .subsection{
+        height: auto;
+    }
+    .sub-head{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .img-2{
+        justify-self: center;
+        width: 200px;
+    }
+    .features-grid-3{
+        grid-template-columns: 1fr;
+        gap: 0;
+
+    }
+    .features-grid-3 > *:first-child,
+    .features-grid-3 > *:nth-child(2) {
+        grid-column: 1;
+    }
+
+    /* Media-Queries For Documentation Section */
+
+    .docs-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .docs-main-card-1{
+        height: auto;
+    }
+
+    .alert{
+        padding: 15px;
+        height: auto;
+    }
+
 }
 
 /*  SM - PHONE LANDSCAPE: 576px - 768px*/

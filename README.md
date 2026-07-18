@@ -1,2 +1,3 @@
 # Loruki
-A Fake Cloud Hosting Platform
+A Cloud Hosting Platform
+lorukiiii.netlify.app

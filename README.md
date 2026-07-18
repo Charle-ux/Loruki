@@ -1,6 +1,6 @@
 # Loruki
 
-Loruki is a responsive cloud hosting landing page built with HTML and CSS. It presents a clean marketing website for a fictional cloud platform, including a homepage, features page, documentation page, responsive layouts, animated sections, and reusable visual assets.
+Loruki is a responsive cloud hosting website built with HTML and CSS. It presents a clean marketing website for a fictional cloud platform, including a homepage, features page, documentation page, responsive layouts, animated sections, and reusable visual assets.
 
 ## Live Demo
 
